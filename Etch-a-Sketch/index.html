@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+</head>
+<body>
+    <div class="commonArea">
+        <h1>Etch-a-Sketch</h1>
+        <div class='buttonsArea'>
+            <button>Black</button>
+            <button>Rainbow</button>
+            <button>Grey</button>
+            <button>Eraser</button>
+            <button>Clear</button>
+        </div>    
+        <div class='container'>
+        </div>    
+        <div id='sliderArea'>
+        <p>Pixel size</p>
+        <input type="range" value="" min="16" max="100" id= 'slider' onchange = "makeRows(this.value)" oninput="this.nextElementSibling.value = this.value">
+        <output for='slider' id='slider2'></output>
+        </div>
+    </div>
+<link href='index.css' rel='stylesheet'>   
+<script src='index.js'></script>     
+</body>
+</html>
